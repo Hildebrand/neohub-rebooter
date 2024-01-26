@@ -1,0 +1,7 @@
+{
+	"name": "NeoHub Rebooter",
+	"version": "1.0.0",
+	"dependencies": {
+		"wscat": "~5.2"
+	}
+}
