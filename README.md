@@ -10,6 +10,7 @@ In short, the script:
 
 ## Prerequisites
 
+- A Linux OS that supports scheduled execution of shell scripts, e.g. cron.
 - A recent version of [NodeJS](https://nodejs.org). It's recommended to use a Node version switcher like [nvm](https://github.com/nvm-sh/nvm).
 - The script currently depends on the [Pushover](http://pushover.net) web+app solution for easy push notification delivery. Specify the user and app token in the top config part of the script.
 
