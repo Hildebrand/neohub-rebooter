@@ -1,6 +1,6 @@
 # HeatMiser NeoHub rebooter
 
-Hi! This repository contains a Bash shell script that, when ran on a daily basis, reboots Heatmiser's NeoHub to keep the legacy API available that normally stops listening after a 48 hour idle period. More specifically, this keeps the Apple HomeKit integration working.
+Hi! This repository contains a Bash shell script that, when ran on a daily basis, reboots [Heatmiser's NeoHub](https://www.heatmiser.com/en/neohub-smart-control/) (v2) to keep the legacy API available that normally stops listening after a 48 hour idle period. More specifically, this keeps the Apple HomeKit integration working.
 
 In short, the script:
 
@@ -10,8 +10,8 @@ In short, the script:
 
 ## Prerequisites
 
-- A recent version of NodeJS. It's recommended to use a Node version switcher like nvm.
-- The script currently depends on the Pushover web+app solution to provide easy notification delivery. Specify the user and app token in the top config part of the script.
+- A recent version of [NodeJS](https://nodejs.org). It's recommended to use a Node version switcher like [nvm](https://github.com/nvm-sh/nvm).
+- The script currently depends on the [Pushover](http://pushover.net) web+app solution for easy push notification delivery. Specify the user and app token in the top config part of the script.
 
 ## Install instructions
 
