@@ -25,7 +25,14 @@ In short, the script:
 - Run `crontab -e` to edit your crontab.
 - Add a line defining the `PATH` envvar; ensure node / wscat can be found on this path.
 - Add a line defining the `SHELL` to be bash: `SHELL=/bin/bash`
-- Add the actual cron definition: e.g.
+- Add the actual cron definition. For a nightly run at 01:00 e.g:
 	- `0 1 * * *  /path/to/restart_neohub.sh >> /logpath/restart_neohub.log`
 
+Now, verify success the next morning. A successful run looks like:
+```
+27-01-2024 01:00:01 - Running restart_neohub.sh
+27-01-2024 01:00:01 - Successfully sent restart command to the NeoHub
+27-01-2024 01:00:01 - Sleeping for 5 minutes before checking for successful reboot
+27-01-2024 01:05:15 - Successfully restarted the NeoHub. Current uptime is 160 sec. which is less than 900 (15 min.)
+```
 That's it!
